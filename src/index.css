@@ -25,9 +25,48 @@ h1{
 
 nav{
   display: flex;
-  width: 80vw;
+  width: 100%;
   justify-content: flex-start;
   padding: 1rem;
+}
+
+#navbarSupportedContent{
+  justify-content: end;
+}
+
+.container-fluid{
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.btnMoon{
+  background-color:#95A5A6;
+  border-radius: 20%;
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btnMoon:hover{
+  background-color: #BDC3C7;
+}
+
+.nav-link{
+  cursor: pointer;
+}
+
+.nav-link:hover{
+  font-weight: bold;
+}
+
+.me-4 text-reset{
+  cursor: pointer;
+}
+
+.textRed{
+  color: red;
 }
 
 a{
@@ -44,10 +83,10 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
+  padding: 0;
   position: relative;
   bottom: 0;
-  width: 90%;
+  width: 100%;
   height: 40px;
   margin-top: 2rem;
 }
@@ -56,9 +95,25 @@ footer > img{
   width: 200px;
   margin: 0;
 }
+
+.imageFooter{
+  margin-left: 215px;
+}
+
+.socialMedia{
+  margin-right: 200px;
+}
+
 footer > p{
   margin: 0;
   padding-top: 0.7rem;
+}
+
+.footerText{
+  background-color: red;
+  height: 40px;
+  color: white;
+  padding-top: 7px;
 }
 
 form{

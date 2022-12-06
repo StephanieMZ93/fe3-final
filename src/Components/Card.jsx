@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/images/doctor.jpg"
+import Link from "react-router-dom";
 
 
 const Card = ({ name, username, id }) => {
@@ -9,8 +10,8 @@ const Card = ({ name, username, id }) => {
   }
 
   return (
-    <div className="card">
-      <image src={logo} height={100}></image>
+    <div className="card grid grid-cols-4 gap-4 mx-auto px-4 ">
+      <image src={logo}></image>
       <p className="nameDentist">{name}</p>
       <p className="userNameDentist">{username}</p>
         {/* En cada card deberan mostrar en name - username y el id */}
@@ -18,9 +19,12 @@ const Card = ({ name, username, id }) => {
         {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
 
         {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
-        <button onClick={addFav} className="favButton">Add fav</button>
+        <button onClick={addFav} className="favButton">
+          <i className="fa-sharp fa-solid fa-star"></i>
+        </button>
     </div>
   );
+
 };
 
 export default Card;

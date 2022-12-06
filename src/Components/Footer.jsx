@@ -1,6 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/DH.png"
-import './footer.css';
+import logo from "../assets/images/DH.png";
 
 const Footer = () => {
   // return (
@@ -14,12 +13,12 @@ const Footer = () => {
     <footer className="d-flex flex-column" >
       <section className="justify-content-center ">
         <div className="footerText">
-          <p> DH - Digital House </p>
+          <p> Powered by </p>
         </div>
       </section>
       <section className="d-flex justify-content-center justify-content-lg-between p-4 ">
         <div className="me-5 d-none d-lg-block">
-          <img width={200} src={logo} alt='DH-logo' />
+          <img className="imageFooter" width={200} src={logo} alt='DH-logo' />
         </div>
         <div className="socialMedia">
           <a href="a" className="me-4 text-reset">
