@@ -1,5 +1,6 @@
 import React from 'react'
 import './navbar.css';
+import {Link} from 'react-router-dom';
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
@@ -27,17 +28,18 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="Home">Home</a>
+            <Link className="nav-link" to='/'>Home</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="Contact">Contact</a>
+            {/* <a className="nav-link" href="/contact">Contact</a> */}
+            <Link className="nav-link" to="/contact">Contact</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="Favs">Favs</a>
+            <Link className="nav-link" to="/favs">Favs</Link>
           </li>
           <li className="nav-item">
             <button className='btnMoon'>
-              <i class="fa-solid fa-moon"></i>
+              <i className="fa-solid fa-moon"></i>
             </button>
           </li>
         </ul>

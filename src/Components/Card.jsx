@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/images/doctor.jpg"
 
 
 const Card = ({ name, username, id }) => {
@@ -9,6 +10,9 @@ const Card = ({ name, username, id }) => {
 
   return (
     <div className="card">
+      <image src={logo} height={100}></image>
+      <p className="nameDentist">{name}</p>
+      <p className="userNameDentist">{username}</p>
         {/* En cada card deberan mostrar en name - username y el id */}
 
         {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
