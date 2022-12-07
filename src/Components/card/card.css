@@ -1,0 +1,54 @@
+.card{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 210px;
+    height: 330px;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    border: 0.5px solid rgb(136, 136, 136);
+}
+
+.card:hover{
+    border: 0.5px solid rgb(206, 217, 142);
+}
+
+.card-grid{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem; 
+    width: 90vw; 
+    height: auto; 
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 3px;
+    padding-bottom: 40px;
+  }
+  
+  .favButton{
+    background-color: rgba(136, 136, 136, 0.116);
+    padding: 5px;
+    border: none;
+    width: 125%;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+
+  .imageCard{
+    width: 120%;
+    height: 90%;
+  }
+
+.nameDentist{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+
+.userNameDentist {
+    font-size: small;
+    margin-bottom: 10px;
+    margin-top: 5px
+}
+
