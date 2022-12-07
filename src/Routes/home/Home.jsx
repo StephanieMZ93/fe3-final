@@ -1,13 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 
-import Card from "../Components/card/Card";
-import { getDentists } from "../service/api.js";
+import Card from "../../Components/card/Card";
+import ThemeContext from "../../context/ThemeContext";
+import DataContext from "../../context/DataContext";
+import { getDentists } from "../../service/api.js";
+import { DARK } from "../../common/const";
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Home = () => {
-  const [dentists, setDentists] = useState();
   const [error, setError] = useState(false);
+  const {theme} = useContext(ThemeContext);
+  const {dentists, setDentists} = useContext(DataContext);
 
   useEffect(() => {
     getDentists().then((response) => {
@@ -33,7 +37,7 @@ const Home = () => {
   }
 
   return (
-    <main className="">
+    <main className={theme === DARK ? 'dark' : 'light'}>
       <h1>Home</h1>
       <div className="card-grid">
         {error ? <div>There was an error</div> : renderDentists()}

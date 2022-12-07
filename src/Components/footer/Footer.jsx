@@ -1,13 +1,9 @@
 import React from "react";
-import logo from "../assets/images/DH.png";
+
+import logo from "../../assets/images/DH.png";
+import "./footer.css"
 
 const Footer = () => {
-  // return (
-  //   <footer>
-  //       <p>Powered by</p>
-  //       <img src="./img/DH.png" alt='DH-logo' />
-  //   </footer>
-  // )
 
   return (
     <footer className="d-flex flex-column" >

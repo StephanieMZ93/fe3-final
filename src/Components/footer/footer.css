@@ -1,0 +1,36 @@
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  margin-top: 2rem;
+}
+
+footer > img {
+  width: 200px;
+  margin: 0;
+}
+
+.imageFooter {
+  margin-left: 215px;
+}
+
+.socialMedia {
+  margin-right: 200px;
+}
+
+footer > p {
+  margin: 0;
+  padding-top: 0.7rem;
+}
+
+.footerText {
+  background-color: red;
+  height: 40px;
+  color: white;
+  padding-top: 7px;
+}

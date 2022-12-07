@@ -1,10 +1,12 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, useContext} from "react";
+import { DARK } from "../common/const";
 import Card from "../Components/card/Card";
+import ThemeContext from "../context/ThemeContext";
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Favs = () => {
-
+  const {theme} = useContext(ThemeContext);
   const [favs,setFavs] = useState();
 
   useEffect(() => {
@@ -39,7 +41,7 @@ const Favs = () => {
   return (
     <>
       <h1>Dentists Favs</h1>
-      <div className="card-grid">
+      <div className={`card-grid ${theme === DARK ? 'dark' : 'light'}`}>
         {renderFavs()}
       </div>
     </>

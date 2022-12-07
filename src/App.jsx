@@ -1,10 +1,10 @@
 import React from "react";
 import {Routes, Route} from "react-router-dom";
 
-import Home from "./Routes/Home";
-import Contact from "./Routes/Contact";
-import Favs from "./Routes/Favs";
-import Detail from "./Routes/Detail";
+import Home from "./routes/home/Home";
+import Contact from "./routes/Contact";
+import Favs from "./routes/Favs";
+import Detail from "./routes/detail/Detail";
 import Layout from "./Components/layout/Layout";
 
 function App() {

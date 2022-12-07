@@ -1,17 +1,22 @@
-import React from 'react'
+import React, {useContext, useReducer} from 'react';
 import {Link} from 'react-router-dom';
+
+import ThemeContext from '../../context/ThemeContext';
+import { LIGHT, DARK } from '../../common/const.js';
+import "./navbar.css";
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Navbar = () => {
+  const {theme, setTheme} = useContext(ThemeContext);
 
-  // return (
-  //   <nav>
-  //     {/* Aqui deberan agregar los liks correspondientes a las rutas definidas */}
-  //     {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
-  //     <button>Change theme</button>
-  //   </nav>
-  // )
+function handleTheme() {
+  if(theme === LIGHT) {
+    return setTheme({type: DARK, payload: DARK});
+  } else {
+    return setTheme({type:LIGHT, payload: LIGHT});
+  }
+}
 
   return(
   <nav className="navbar navbar-expand-lg bg-light">
@@ -37,7 +42,7 @@ const Navbar = () => {
             <Link className="nav-link" to="/favs">Favs</Link>
           </li>
           <li className="nav-item">
-            <button className='btnMoon'>
+            <button className='btnMoon' onClick={handleTheme}>
               <i className="fa-solid fa-moon"></i>
             </button>
           </li>

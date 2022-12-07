@@ -11,3 +11,15 @@ export async function getDentists () {
     }
     return result;
 }
+
+export async function getDentistById (id) {
+    const result = {};
+    try {
+        const response = await fetch(`${URL_API}/${id}`);
+        const data = await response.json();
+        result.data = data;
+    } catch (error) {
+        result.error = error;
+    }
+    return result;
+}
