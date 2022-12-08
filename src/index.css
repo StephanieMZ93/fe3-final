@@ -7,6 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+}
+
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -15,8 +24,6 @@ code {
 h1{
   text-align: center;
 }
-
-
 
 a{
   color: #000;

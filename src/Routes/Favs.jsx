@@ -39,12 +39,12 @@ const Favs = () => {
   }
 
   return (
-    <>
+    <div className={theme === DARK ? 'dark' : 'light'}>
       <h1>Dentists Favs</h1>
-      <div className={`card-grid ${theme === DARK ? 'dark' : 'light'}`}>
+      <div className="card-grid">
         {renderFavs()}
       </div>
-    </>
+    </div>
   );
 };
 

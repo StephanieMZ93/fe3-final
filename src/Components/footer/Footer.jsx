@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useContext} from "react";
 
 import logo from "../../assets/images/DH.png";
+import { DARK } from "../../common/const";
+import ThemeContext from "../../context/ThemeContext";
 import "./footer.css"
 
 const Footer = () => {
+  const {theme} = useContext(ThemeContext);
 
   return (
     <footer className="d-flex flex-column" >
@@ -12,7 +15,7 @@ const Footer = () => {
           <p> Powered by </p>
         </div>
       </section>
-      <section className="d-flex justify-content-center justify-content-lg-between p-4 ">
+      <section className={`d-flex justify-content-center justify-content-lg-between p-4 ${theme === DARK ? 'dark' : 'light'}`}>
         <div className="me-5 d-none d-lg-block">
           <img className="imageFooter" width={200} src={logo} alt='DH-logo' />
         </div>

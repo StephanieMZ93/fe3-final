@@ -54,12 +54,12 @@ const Detail = () => {
   }
 
   return (
-    <>
+    <div className={theme === DARK ? 'dark' : 'light'}>
       <h1>Detail Dentist id </h1>
-      <div className={`card-grid ${theme === DARK ? 'dark' : 'light'}`}>
+      <div className="card-grid">
         {error ? <div>There was an error</div> : renderDentist()}
       </div>
-    </>
+    </div>
   )
 }
 
