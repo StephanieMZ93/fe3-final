@@ -2,8 +2,8 @@ import React from "react";
 import {Routes, Route} from "react-router-dom";
 
 import Home from "./routes/home/Home";
-import Contact from "./routes/Contact";
-import Favs from "./routes/Favs";
+import Contact from "./routes/contact/Contact";
+import Favs from "./routes/favs/Favs";
 import Detail from "./routes/detail/Detail";
 import Layout from "./Components/layout/Layout";
 

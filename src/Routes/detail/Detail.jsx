@@ -6,11 +6,8 @@ import ThemeContext from '../../context/ThemeContext';
 import { getDentistById } from '../../service/api';
 import "./detail.css"
 
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
-
 const Detail = () => {
   const {theme} = useContext(ThemeContext);
-  // Consumiendo el parametro dinamico de la URL deberan hacer un fetch a un user en especifico
   const params = useParams();
   const [dentist, setDentist] = useState();
   const [error, setError] = useState(false);

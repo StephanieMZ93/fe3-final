@@ -4,7 +4,6 @@ import {createContext} from 'react';
 const DataContext = createContext();
 const initialData = [];
 
-
 const DataProvider = ({children}) => {
     const [dentists, setDentists] =useState(initialData);
     const data = {dentists, setDentists};

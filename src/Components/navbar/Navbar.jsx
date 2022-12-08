@@ -5,8 +5,6 @@ import ThemeContext from '../../context/ThemeContext';
 import { LIGHT, DARK } from '../../common/const.js';
 import "./navbar.css";
 
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
-
 const Navbar = () => {
   const {theme, setTheme} = useContext(ThemeContext);
 

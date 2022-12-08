@@ -14,8 +14,6 @@ body {
   min-height: 100vh;
 }
 
-
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -43,7 +41,6 @@ form{
   padding-bottom: 2rem;
   margin: 0 auto;
 }
-
 
 .dark{
   background-color: #12121296;

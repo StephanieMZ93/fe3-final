@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import './form.css'
 
-const Form = ({setMessage}) => {
+const Form = ({setMessage, setErrorMessage}) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
@@ -13,6 +13,7 @@ const Form = ({setMessage}) => {
     const isEmailNotValid = validateEmail(email);
     if(isNameNotValid || isEmailNotValid){
       setError(isNameNotValid || isEmailNotValid);
+      setErrorMessage('Por favor verifique su información nuevamente');
     } else {
       setMessage(`Gracias ${name}, te contactaremos cuando antes vía mail`);
       setError(undefined);
