@@ -15,14 +15,6 @@ footer > img {
   margin: 0;
 }
 
-.imageFooter {
-  margin-left: 215px;
-}
-
-.socialMedia {
-  margin-right: 200px;
-}
-
 footer > p {
   margin: 0;
   padding-top: 0.7rem;
@@ -33,4 +25,12 @@ footer > p {
   height: 40px;
   color: white;
   padding-top: 7px;
+}
+
+.imageFooter {
+  margin-left: 215px;
+}
+
+.socialMedia {
+  margin-right: 200px;
 }

@@ -1,13 +1,14 @@
-.favContainer{
-    max-width: 900px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+.favContainer {
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap:20px;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

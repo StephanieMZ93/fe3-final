@@ -1,6 +1,6 @@
 const URL_API = 'https://jsonplaceholder.typicode.com/users'
 
-export async function getDentists () {
+export async function getDentists() {
     const result = {};
     try {
         const response = await fetch(URL_API);
@@ -12,7 +12,7 @@ export async function getDentists () {
     return result;
 }
 
-export async function getDentistById (id) {
+export async function getDentistById(id) {
     const result = {};
     try {
         const response = await fetch(`${URL_API}/${id}`);

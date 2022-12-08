@@ -1,3 +1,7 @@
+.dark td {
+  color: whitesmoke;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -16,8 +20,4 @@ th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
-}
-
-.dark td {
-  color: whitesmoke;
 }
